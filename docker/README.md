@@ -9,12 +9,12 @@
 **Solution**: Run these commands to symlink before installing.
 
 ```
-md "D:\Program Files\Docker\ProgramDataDocker"
-md "D:\Program Files\Docker\ProgramDataDockerDesktop"
-md "D:\Program Files\Docker\ProgramFiles"
-md "D:\Program Files\Docker\RoamingDockerDesktop"
-md "D:\Program Files\Docker\RoamingDocker"
-md "D:\Program Files\Docker\AppDataDocker"
+md "D:\my_destination_folder\Docker\ProgramDataDocker"
+md "D:\my_destination_folder\Docker\ProgramDataDockerDesktop"
+md "D:\my_destination_folder\Docker\ProgramFiles"
+md "D:\my_destination_folder\Docker\RoamingDockerDesktop"
+md "D:\my_destination_folder\Docker\RoamingDocker"
+md "D:\my_destination_folder\Docker\AppDataDocker"
 
 mklink /j "C:\ProgramData\Docker" "D:\my_destination_folder\Docker\ProgramDataDocker"
 mklink /j "C:\ProgramData\DockerDesktop" "D:\my_destination_folder\Docker\ProgramDataDockerDesktop"
