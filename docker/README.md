@@ -1,6 +1,8 @@
-# Problem
+# Problems
 
 ## Windows
+
+---
 
 > Cannot change docker installation directory. Refs: [one](https://github.com/docker/roadmap/issues/94)
 
@@ -21,6 +23,8 @@ mklink /j "C:\Users\Administrator\AppData\Roaming\Docker Desktop" "D:\my_destina
 mklink /j "C:\Users\Administrator\AppData\Roaming\Docker" "D:\my_destination_folder\Docker\RoamingDocker"
 mklink /j "C:\Users\Administrator\AppData\Local\Docker" "D:\my_destination_folder\Docker\AppDataDocker"
 ```
+
+---
 
 > Need to move containers from `C:/` to another directory. Refs: [one](https://blog.codetitans.pl/post/howto-docker-over-wsl2-location/)
 
