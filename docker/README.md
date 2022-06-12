@@ -7,7 +7,7 @@
 > Docker Desktop `>=4.7.0` cannot install because `%PROGRAMDATA%\DockerDesktop` is symlink (from solution below). Ref: [one](https://github.com/docker/for-win/issues/12650), [two](https://github.com/docker/for-win/issues/12744)
 
 **Solution**: ~~Download patched version: [installer](https://desktop-stage.docker.com/win/main/amd64/77294/Docker%20Desktop%20Installer.exe)~~
-Delete symlink `C:\ProgramData\DockerDesktop`
+Delete symlink `C:\ProgramData\DockerDesktop`, as it does not really hold much data.
 
 ---
 
