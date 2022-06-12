@@ -6,22 +6,22 @@
 
 > Cannot change docker installation directory. Refs: [one](https://github.com/docker/roadmap/issues/94)
 
-**Solution**: Run these commands to symlink before installing.
+**Solution**: Run these commands in an elevated `cmd` to symlink before installing.
 
 ```
-md "D:\my_destination_folder\Docker\ProgramDataDocker"
-md "D:\my_destination_folder\Docker\ProgramDataDockerDesktop"
-md "D:\my_destination_folder\Docker\ProgramFiles"
-md "D:\my_destination_folder\Docker\RoamingDockerDesktop"
-md "D:\my_destination_folder\Docker\RoamingDocker"
-md "D:\my_destination_folder\Docker\AppDataDocker"
+md "D:\Prycs\Docker\ProgramDataDocker"
+md "D:\Prycs\Docker\ProgramDataDockerDesktop"
+md "D:\Prycs\Docker\ProgramFiles"
+md "D:\Prycs\Docker\RoamingDockerDesktop"
+md "D:\Prycs\Docker\RoamingDocker"
+md "D:\Prycs\Docker\AppDataDocker"
 
-mklink /j "C:\ProgramData\Docker" "D:\my_destination_folder\Docker\ProgramDataDocker"
-mklink /j "C:\ProgramData\DockerDesktop" "D:\my_destination_folder\Docker\ProgramDataDockerDesktop"
-mklink /j "C:\my_destination_folder\Docker" "D:\my_destination_folder\Docker\ProgramFiles"
-mklink /j "C:\Users\Administrator\AppData\Roaming\Docker Desktop" "D:\my_destination_folder\Docker\RoamingDockerDesktop"
-mklink /j "C:\Users\Administrator\AppData\Roaming\Docker" "D:\my_destination_folder\Docker\RoamingDocker"
-mklink /j "C:\Users\Administrator\AppData\Local\Docker" "D:\my_destination_folder\Docker\AppDataDocker"
+mklink /j "C:\ProgramData\Docker" "D:\Prycs\Docker\ProgramDataDocker"
+mklink /j "C:\ProgramData\DockerDesktop" "D:\Prycs\Docker\ProgramDataDockerDesktop"
+mklink /j "C:\Program Files\Docker" "D:\Prycs\Docker\ProgramFiles"
+mklink /j "C:\Users\Wister\AppData\Roaming\Docker Desktop" "D:\Prycs\Docker\RoamingDockerDesktop"
+mklink /j "C:\Users\Wister\AppData\Roaming\Docker" "D:\Prycs\Docker\RoamingDocker"
+mklink /j "C:\Users\Wister\AppData\Local\Docker" "D:\Prycs\Docker\AppDataDocker"
 ```
 
 ---
