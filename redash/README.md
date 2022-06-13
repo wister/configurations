@@ -15,3 +15,7 @@ Run the following commands:
 docker-compose run --rm server create_db
 docker-compose up -d
 ```
+
+# Testing
+
+After having the container running, go to: `http://localhost:5000/`
