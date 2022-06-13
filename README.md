@@ -3,4 +3,5 @@ Markdown Cheatsheet: [link](https://github.com/adam-p/markdown-here/wiki/Markdow
 # List of configurations
 
 - [Docker](./docker/)
+- [Redash](./redash/)
 - [Superset](./superset/)
