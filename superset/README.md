@@ -9,7 +9,7 @@ docker exec -it superset superset load_examples
 docker exec -it superset superset init
 ```
 
-# Runnning
+# Runnning and sharing dashboards
 
 > Cannot see share and see dashboards without account. Refs: [one](https://superset.apache.org/docs/security/#public)
 
