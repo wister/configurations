@@ -1,6 +1,6 @@
 # Installation
 
-> It's been a pain to find a working, easy, installation of [redash](https://redash.io/) in Windows. We will do the Docker approach.
+> It's been a pain to find a working, easy, installation guide of [redash](https://redash.io/) in Windows. We will do the Docker approach.
 
 **Solution**: Put the following files in a folder.
 
