@@ -19,3 +19,7 @@ docker-compose up -d
 # Testing
 
 After having the container running, go to: `http://localhost:5000/`
+
+# Configuring new Data Source
+
+Since its in a docker, remember host `docker.host.internal` to refer to host machine.
