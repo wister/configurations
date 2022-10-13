@@ -1,0 +1,75 @@
+{
+  "workbench.colorTheme": "Default Dark+",
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.bracketPairColorization.enabled": true,
+  "telemetry.telemetryLevel": "off",
+  "redhat.telemetry.enabled": false,
+  "editor.semanticTokenColorCustomizations": {
+    "enabled": false
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "expression.embbeded.vue punctuation.definition.tag.begin.html.vue",
+          "expression.embbeded.vue punctuation.definition.tag.end.html.vue"
+        ],
+        "settings": {
+          "fontStyle": "bold",
+          "foreground": "#ffc400"
+        }
+      },
+      {
+        "scope": ["expression.embbeded.vue punctuation.accessor.ts"],
+        "settings": {
+          "fontStyle": "bold",
+          "foreground": "#C586C0"
+        }
+      },
+      {
+        "scope": ["expression.embbeded.vue source.ts.embedded.html.vue variable.other.object.ts"],
+        "settings": {
+          "fontStyle": "",
+          "foreground": "#4FC1FF"
+        }
+      },
+      {
+        "scope": ["expression.embbeded.vue source.ts.embedded.html.vue meta.function-call.ts variable.other.object.ts"],
+        "settings": {
+          "fontStyle": "bold",
+          "foreground": "#39BFA7"
+          // "foreground": "#ebfa95"
+        }
+      }
+    ]
+  },
+  "prettier.printWidth": 120,
+  "actionButtons": {
+    "defaultColor": "#ebfa95",
+    "loadNpmCommands": true,
+    "commands": [
+      // {
+      //   "cwd": "/home/custom_folder", // Terminal initial folder ${workspaceFolder} and os user home as defaults
+      //   "name": "Run Cargo",
+      //   "color": "green",
+      //   "singleInstance": true,
+      //   "command": "cargo run ${file}" // This is executed in the terminal.
+      // },
+      // {
+      //   "name": "Build Cargo",
+      //   "color": "green",
+      //   "command": "cargo build ${file}"
+      // }
+      {
+        "name": "Save w/o formatting",
+        "color": "white",
+        "useVsCodeApi": true,
+        "command": "workbench.action.files.saveWithoutFormatting"
+      }
+    ]
+  },
+  "css.lint.unknownAtRules": "ignore"
+}
