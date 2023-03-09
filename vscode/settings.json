@@ -6,7 +6,6 @@
   "editor.formatOnSave": true,
   "editor.bracketPairColorization.enabled": true,
   "telemetry.telemetryLevel": "off",
-  "redhat.telemetry.enabled": false,
   "editor.semanticTokenColorCustomizations": {
     "enabled": false
   },
@@ -23,7 +22,16 @@
         }
       },
       {
-        "scope": ["expression.embbeded.vue punctuation.accessor.ts"],
+        "scope": [
+          "expression.embbeded.vue punctuation.accessor.ts",
+          "meta.attribute.directive.vue",
+          "punctuation.definition.string.begin.html.vue",
+          "punctuation.definition.string.end.html.vue",
+          "punctuation.attribute-shorthand.event.html.vue",
+          "punctuation.separator.key-value.html",
+          "punctuation.definition.string.begin.html",
+          "punctuation.definition.string.end.html"
+        ],
         "settings": {
           "fontStyle": "bold",
           "foreground": "#C586C0"
@@ -37,7 +45,10 @@
         }
       },
       {
-        "scope": ["expression.embbeded.vue source.ts.embedded.html.vue meta.function-call.ts variable.other.object.ts"],
+        "scope": [
+          "expression.embbeded.vue source.ts.embedded.html.vue meta.function-call.ts variable.other.object.ts",
+          "entity.other.attribute-name"
+        ],
         "settings": {
           "fontStyle": "bold",
           "foreground": "#39BFA7"
@@ -51,18 +62,6 @@
     "defaultColor": "#ebfa95",
     "loadNpmCommands": true,
     "commands": [
-      // {
-      //   "cwd": "/home/custom_folder", // Terminal initial folder ${workspaceFolder} and os user home as defaults
-      //   "name": "Run Cargo",
-      //   "color": "green",
-      //   "singleInstance": true,
-      //   "command": "cargo run ${file}" // This is executed in the terminal.
-      // },
-      // {
-      //   "name": "Build Cargo",
-      //   "color": "green",
-      //   "command": "cargo build ${file}"
-      // }
       {
         "name": "Save w/o formatting",
         "color": "white",
